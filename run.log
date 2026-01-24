@@ -1,0 +1,21 @@
+Task 1: 查询天气
+User: 北京今天天气怎么样？
+
+--- Turn 1 (Thinking...) ---
+-> Act: Calling Tool 'get_weather' with args {'query': '北京'}
+<- Observe: Result: 北京今天是晴天，气温 25度。
+
+--- Turn 2 (Thinking...) ---
+Agent: 北京今天是晴天，气温为25度，适合外出活动哦！
+
+==============================
+
+Task 2: 复杂推理
+User: 北京的气温加上 10 度是多少？
+
+--- Turn 1 (Thinking...) ---
+-> Act: Calling Tool 'calculator' with args {'query': '25 + 10'}
+<- Observe: Result: 35
+
+--- Turn 2 (Thinking...) ---
+Agent: 北京今天的气温25度加上10度等于**35度**。
